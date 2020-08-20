@@ -28,10 +28,10 @@ jobs:
       with:
         version: 12
 
-    - name: GitHub Action for NPM/Chrome
-      uses: daleobrien/npm-with-chrome-browser-action@v1.0.1
+    - name: NPM Publish
+      uses: JS-DevTools/npm-publish@v1
       with:
-        cmd: npm install
+        cmd: install
     - name: creating build
       run: npm run build
         
