@@ -28,10 +28,7 @@ jobs:
       with:
         version: 12
 
-    - name: NPM Publish
-      uses: JS-DevTools/npm-publish@v1
-      with:
-        cmd: npm install
+ 
     - name: creating build
       run: npm run build
         
