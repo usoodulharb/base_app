@@ -7,8 +7,7 @@ name: CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+ 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -27,7 +26,10 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         version: 12
-
+    - name: Automated releases for npm packages.
+      uses: mikeal/merge-release@v4.0.7
+      with:
+        cmd: install
  
     - name: creating build
       run: npm run build
