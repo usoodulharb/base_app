@@ -37,5 +37,5 @@ jobs:
     - name: Installing surge
       run: npm install --global surge
     - name: Deploying using surge
-      run: surge ./build bcs2.surge.sh --token ${{ secrets.SURGE }}
+      run: surge ./build bcs2.surge.sh --token ${{ secrets.SURGER }}
         
